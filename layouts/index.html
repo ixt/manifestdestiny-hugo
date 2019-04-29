@@ -1,0 +1,10 @@
+{{ define "content" }}
+<section>
+  <ul class="posts_listing">
+    {{ range where .Paginator.Pages "Section" "apps"}}
+        {{ partial "item.html" . }}
+    {{ end }}
+  </ul>
+</section>
+    {{- template "_internal/pagination.html" . -}}
+{{ end }}

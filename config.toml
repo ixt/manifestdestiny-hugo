@@ -1,0 +1,12 @@
+languageCode = "en-gb"
+title = "Manifest Destiny"
+baseurl = "http://manifestdestiny.reveb.la"
+theme = "basics"
+paginate = "50"
+[outputs]
+  home = ["HTML", "JSON"]
+
+[taxonomies]
+  tracker = "trackers"
+  permission = "permissions"
+  category = "categories"
