@@ -1,6 +1,6 @@
 languageCode = "en-gb"
 title = "Manifest Destiny"
-baseurl = "http://manifestdestiny.reveb.la"
+baseurl = "https://manifestdestiny.reveb.la"
 theme = "basics"
 paginate = "50"
 [outputs]

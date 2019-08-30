@@ -1,7 +1,7 @@
 {{ $name := .Get 0 }}
 {{ if (index .Site.Data.permissionsDB $name) }}
-<table> <tbody>
 <div class="permission">
+<table> <tbody>
     <tr> 
         <td><h3 class="permission-link {{ (index .Site.Data.permissionsDB $name).protectionLevel }}"> <a href="{{ path.Join "permissions/" (index .Site.Data.permissionsDB $name).name | absURL | lower }}"> {{ (index .Site.Data.permissionsDB $name).name }} </a></h3></td>
         <td>{{ (index .Site.Data.permissionsDB $name).description }}</br></td>
@@ -10,6 +10,6 @@
         <td> <b>{{ (index .Site.Data.permissionsDB $name).permissionFlags }}</b></br> </td>
     {{ end }}
     </tr>
-</div>
     </tbody> </table>
+</div>
 {{ end }}
